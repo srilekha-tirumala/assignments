@@ -1,3 +1,14 @@
+function beforeLoad(type, form) {
+    form.setScript('customscript919');
+    form.addButton('custpage_script_testing', 'Script Testing', 'buttonClicked()');
+    nlapiLogExecution('DEBUG', 'beforeLoad', 'type=' + type)
+  }
+  
+  function buttonClicked() {
+    var record = nlapiLoadRecord(nlapiGetRecordType(), nlapiGetRecordId());
+    record.setFieldValue('custentity1323', record.getFieldValue('companyname'));
+  }
+  
 function afterSubmit(type) {
     if(nlapiGetRecordType() == 'salesorder'&& type == 'edit') {
         var salesOrderID = nlapiGetRecordId();

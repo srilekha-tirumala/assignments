@@ -1,0 +1,22 @@
+{
+   "Student": {
+      "PersonalInformation": [
+         {
+            "FirstName": [
+               "Test1"
+            ],
+            "LastName": [
+               "Name"
+            ]
+         },
+         {
+            "FirstName": [
+               "Demo"
+            ],
+            "LastName": [
+               "Lastname"
+            ]
+         }
+      ]
+   }
+}
