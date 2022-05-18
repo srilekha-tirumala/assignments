@@ -37,7 +37,7 @@ let URLs = [{
         name: 'image7.jpg'
     },
 ];
-let dir = 'demo-testing-images';
+let dir = './NodeJS-assignements/demo-testing-images';
 fs.mkdir(dir, (err) => {
     if (err) return err;
 })
