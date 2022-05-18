@@ -63,7 +63,7 @@ URLs.forEach(url => {
     downloadImagefromtheURL(url.link, dir + '/' + url.name);
     console.log(url.name + ' downloaded');
 
-    function resolveAfter2Seconds() {
+    function resolveAfter1Second() {
         return new Promise(resolve => {
             setTimeout(() => {
                 try {
@@ -82,7 +82,7 @@ URLs.forEach(url => {
         });
     }
     async function asyncCall() {
-        const result = await resolveAfter2Seconds();
+        const result = await resolveAfter1Second();
         console.log(result);
     }
     asyncCall();
